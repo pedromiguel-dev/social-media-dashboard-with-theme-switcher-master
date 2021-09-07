@@ -1,0 +1,18 @@
+@import "./abstracts/color";
+@import "./modules/button";
+@import "./modules/header";
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--White);
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+//font-family: 'Inter', sans-serif;

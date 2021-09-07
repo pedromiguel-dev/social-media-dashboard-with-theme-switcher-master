@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="/styles/main.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,13 +14,22 @@
   </style>
 </head>
 <body>
+  <header class="cima">
+    <div class="cima__wrapper cima__wrapper__firstblock">
+      <h1 class="cima__title">Social Media Dashboard</h1>
+      <p class="cima__total">Total Followers: 23,004</p>
+    </div>
+    <div class="cima__wrapper cima__wrapper__secondblock">
+      <span class="cima__darkmode">Dark Mode</span>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+      <label class="cima__button">
+        <input class="cima__button__checkbox" type="checkbox">
+        <span class="cima__slider cima__slider__round"></span>
+      </label>
 
-  Dark Mode
-
-  
+    </div>
+  </header>
+<!-- 
 
   @nathanf
   1987
@@ -82,6 +90,6 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

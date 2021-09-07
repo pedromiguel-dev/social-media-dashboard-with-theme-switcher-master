@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+:root {
+  --Lime-Green: hsl(163, 72%, 41%);
+  --Bright-Red: hsl(356, 69%, 56%);
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --YouTube: hsl(348, 97%, 39%);
+  --Toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --Toggle-light: hsl(230, 22%, 74%);
+  --Very-Dark-Blue: hsl(230, 17%, 14%);
+  --Very-Dark-Blue-header: hsl(232, 19%, 15%);
+  --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
+  --Desaturated-Blue: hsl(228, 34%, 66%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Pale-Blue: hsl(225, 100%, 98%);
+  --Light-Grayish-Blue: hsl(227, 47%, 96%);
+  --Dark-Grayish-Blue: hsl(228, 12%, 44%);
+  --Very-Dark-Blue: hsl(230, 17%, 14%);
+}
+
+.cima__button {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.cima__button input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.cima__button input:checked + .cima__slider {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-image: var(--Toggle);
+}
+
+.cima__button input:focus + .cima__slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+.cima__button input:checked + .cima__slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.cima__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--Toggle-light);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.cima__slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.cima__slider__round {
+  border-radius: 34px;
+}
+
+.cima__slider__round:before {
+  border-radius: 50%;
+}
+
+.cima {
+  background-color: var(--Very-Pale-Blue);
+  padding: 20px 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.cima__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cima__wrapper__firstblock {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 1px var(--Dark-Grayish-Blue) solid;
+  margin-bottom: 20px;
+}
+
+.cima__title {
+  font-family: 'Inter', sans-serif;
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.cima__total {
+  font-family: 'Inter', sans-serif;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.cima__darkmode {
+  font-family: 'Inter', sans-serif;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--White);
+}
+/*# sourceMappingURL=main.css.map */
