@@ -4,8 +4,7 @@
 
 ### Links
 
-- Solution URL: [Front end mentor](https://)
-- Live Site URL: [Vercel App](https://)
+- Live Site URL: [Vercel App](https://social-media-dashboard-with-theme-switcher-master-gamma-green.vercel.app/)
 
 ## My process
 - It was cool
