@@ -17,7 +17,7 @@
 //Dark Theme
 
 --Very-Dark-Blue: hsl(230, 17%, 14%);//BG
---Very-Dark-Blue-header: hsl(232, 19%, 15%);
+--Very-Dark-Blue-header: hsl(232, 19%, 15%); //(Top BG Pattern)
 --Dark-Desaturated-Blue: hsl(228, 28%, 20%); //card BG
 --Desaturated-Blue: hsl(228, 34%, 66%); //(Text)
 
@@ -26,7 +26,26 @@
 --White: hsl(0, 0%, 100%); //BG
 --Very-Pale-Blue: hsl(225, 100%, 98%); //(Top BG Pattern)
 --Light-Grayish-Blue: hsl(227, 47%, 96%); //card BG
---Dark-Grayish-Blue: hsl(228, 12%, 44%); //TEXT
---Very-Dark-Blue: hsl(230, 17%, 14%);
+--Dark-Grayish-Blue: hsl(228, 12%, 44%); //TEXT small
+--Very-Dark-Blue: hsl(230, 17%, 14%); //text Big??
+--hover-white: hsl(227, 21%, 92%);
+--hover-dark: hsl(230, 23%, 26%);
 
+
+//play with that
+--background: var(--White);
+--card-bg: var(--Light-Grayish-Blue);
+--top-bg:var(--Very-Pale-Blue);
+--text-samll:var(--Dark-Grayish-Blue);
+--text-big: var(--Very-Dark-Blue);
+--hover: var(--hover-white);
+}
+
+html[data-theme="dark"] {
+  --background: var(--Very-Dark-Blue);
+  --card-bg: var(--Dark-Desaturated-Blue);
+  --top-bg:var(--Very-Dark-Blue-header);
+  --text-samall: var(--Very-Dark-Blue);
+  --text-big: var(--White);
+  --hover:var(--hover-dark);
 }

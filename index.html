@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -15,25 +15,27 @@
 </head>
 <body>
   <header class="cima">
-    <div class="cima__wrapper cima__wrapper__firstblock">
-      <h1 class="cima__title">Social Media Dashboard</h1>
-      <p class="cima__total">Total Followers: 23,004</p>
-    </div>
-    <div class="cima__wrapper cima__wrapper__secondblock">
-      <span class="cima__darkmode">Dark Mode</span>
-
-      <label class="cima__button">
-        <input class="cima__button__checkbox" type="checkbox">
-        <span class="cima__slider cima__slider__round"></span>
-      </label>
-    </div>
+    <section class="cima__wrapper">
+      <div class=" cima__wrapper__block cima__wrapper__block--one">
+        <h1 class="cima__title">Social Media Dashboard</h1>
+        <p class="cima__total">Total Followers: 23,004</p>
+      </div>
+      <div class="cima__wrapper__block cima__wrapper__block--two">
+        <span class="cima__darkmode">Dark Mode</span>
+  
+        <label class="cima__button">
+          <input class="cima__button__checkbox" name="botao" type="checkbox">
+          <span class="cima__slider cima__slider__round"></span>
+        </label>
+      </div>
+    </section>
   </header>
 
   <main class="info">
     <section class="info__wrapper">
 
 
-      <article class="info__card info__card--main info__card--face">
+      <article class="info__card info__card--main info__card--face hoverable">
         <div class="info__social">
           <img src="./images/icon-facebook.svg" alt="facebook">
           <p class="info__arroba">@nathanf</p>
@@ -49,7 +51,7 @@
       </article>
     
 
-      <article class="info__card info__card--main info__card--twitter">
+      <article class="info__card info__card--main info__card--twitter hoverable">
         <div class="info__social">
           <img src="./images/icon-twitter.svg" alt="Twitter">
           <p class="info__arroba">@nathanf</p>
@@ -64,7 +66,7 @@
           </div>
       </article>
 
-      <article class="info__card info__card--main info__card--insta">
+      <article class="info__card info__card--main info__card--insta hoverable">
         <div class="info__social">
           <img src="./images/icon-instagram.svg" alt="Instagram">
           <p class="info__arroba">@realnathanf</p>
@@ -79,7 +81,7 @@
           </div>
       </article>
 
-      <article class="info__card info__card--main info__card--youtube">
+      <article class="info__card info__card--main info__card--youtube hoverable">
         <div class="info__social">
           <img src="./images/icon-youtube.svg" alt="YouTube">
           <p class="info__arroba">@Nathan F.</p>
@@ -93,6 +95,7 @@
           <p class="info__numberstoday">144 Today</p>
         </div>
       </article>
+
     </section>
 
     <h1 class="info__title" >Overview - Today</h1>
@@ -101,7 +104,7 @@
 
       <!-- facebook cards -->
 
-      <article class="info__card info__card--menor info__card--secondary">
+      <article class="info__card info__card--menor info__card--secondary hoverable">
         <div class="info__social--menor">
           <p class="info__arroba info__arroba--menor">Page Views</p>
           <img src="./images/icon-facebook.svg" alt="Facebook">
@@ -115,7 +118,7 @@
         </div>
       </article>
 
-      <article class="info__card info__card--menor info__card--secondary">
+      <article class="info__card info__card--menor info__card--secondary hoverable">
         <div class="info__social--menor">
           <p class="info__arroba info__arroba--menor">Likes</p>
           <img src="./images/icon-facebook.svg" alt="Facebook">
@@ -131,7 +134,7 @@
 
       <!-- insta cards -->
 
-      <article class="info__card info__card--menor info__card--secondary">
+      <article class="info__card info__card--menor info__card--secondary hoverable">
         <div class="info__social--menor">
           <p class="info__arroba info__arroba--menor">Likes</p>
           <img src="./images/icon-instagram.svg" alt="Instagram">
@@ -145,7 +148,7 @@
         </div>
       </article>
 
-      <article class="info__card info__card--menor info__card--secondary">
+      <article class="info__card info__card--menor info__card--secondary hoverable">
         <div class="info__social--menor">
           <p class="info__arroba info__arroba--menor">Profile Views</p>
           <img src="./images/icon-instagram.svg" alt="Instagram">
@@ -161,7 +164,7 @@
 
       <!-- twitter cards -->
 
-      <article class="info__card info__card--menor info__card--secondary">
+      <article class="info__card info__card--menor info__card--secondary hoverable">
         <div class="info__social--menor">
           <p class="info__arroba info__arroba--menor">Retweets</p>
           <img src="./images/icon-twitter.svg" alt="Twitter">
@@ -175,7 +178,7 @@
         </div>
       </article>
 
-      <article class="info__card info__card--menor info__card--secondary">
+      <article class="info__card info__card--menor info__card--secondary hoverable">
         <div class="info__social--menor">
           <p class="info__arroba info__arroba--menor">Likes</p>
           <img src="./images/icon-twitter.svg" alt="Twitter">
@@ -191,7 +194,7 @@
 
       <!-- youtube cards -->
 
-      <article class="info__card info__card--menor info__card--secondary">
+      <article class="info__card info__card--menor info__card--secondary hoverable">
         <div class="info__social--menor">
           <p class="info__arroba info__arroba--menor">Likes</p>
           <img src="./images/icon-youtube.svg" alt="youtube">
@@ -205,7 +208,7 @@
         </div>
       </article>
 
-      <article class="info__card info__card--menor info__card--secondary">
+      <article class="info__card info__card--menor info__card--secondary hoverable">
         <div class="info__social--menor">
           <p class="info__arroba info__arroba--menor">Total Views</p>
           <img src="./images/icon-youtube.svg" alt="YouTube">
@@ -219,13 +222,10 @@
         </div>
       </article>
 
-
     </section>
   </main>
+  <script src="./js/app.js"></script>
 <!--
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+ -->
 </body>
 </html>

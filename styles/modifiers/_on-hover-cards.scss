@@ -1,0 +1,5 @@
+.hoverable:hover{
+    transition: .3s all;
+    background-color: var(--hover);
+    transform: scale(1.05);
+}
